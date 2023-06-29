@@ -1,0 +1,4 @@
+<launch>
+<node pkg="competition" name="openPanel" type="openPanel.py" output="screen" respawn="false">
+</node>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+<node pkg="competition" name="secretButton" type="secretButton.py" output="screen" respawn="false">
+</node>
+</launch>
