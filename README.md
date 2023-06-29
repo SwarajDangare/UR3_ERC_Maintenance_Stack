@@ -64,7 +64,9 @@ Now, use the `catkin_make` tool build the workspace:
 ```sh
 catkin_make
 ```
-Make sure you source the devel space on each terminal session you want to use the simulation on:
+If you don’t want to have to source the setup file every time you open a new shell, then you can add the commands to your shell startup script:
 ```sh
-source /opt/ros/noetic/setup.bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "source ~/UR3_ERC_Maintenance_Stack/devel/setup.bash" >> ~/.bashrc
 ```
