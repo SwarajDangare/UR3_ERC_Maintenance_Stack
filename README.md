@@ -18,7 +18,7 @@ The simulation requires ROS and simulations of the Universal Robots UR3 robot cr
 
 ### Download UR3 simulation
 
-For the simulation to work on your system you must install dependencies and download repositories by running the following commands:
+For the simulation to work on your system, you must install dependencies and download repositories by running the following commands:
 
 ```sh
 source /opt/ros/noetic/setup.bash
@@ -48,9 +48,9 @@ roslaunch ur3_sim real_station.launch
 ```
 
 ## Building
-This repository contains all the competition submitions.
+This repository contains all the competition submissions.
 
-To clone the repo, navigate to you root directory:
+To clone the repo, navigate to your root directory:
 ```sh
 cd
 ```
@@ -58,11 +58,11 @@ clone this repository:
 ```sh
 git clone https://github.com/SwarajDangare/UR3_ERC_Maintenance_Stack.git
 ```
-Navigate to the reposetory:
+Navigate to the repository:
 ```sh
 cd UR3_ERC_Maintenance_Stack
 ```
-Now, use the `catkin_make` tool build the workspace:
+Now, use the `catkin_make` tool to build the workspace:
 ```sh
 catkin_make
 ```
@@ -73,14 +73,14 @@ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 echo "source ~/UR3_ERC_Maintenance_Stack/devel/setup.bash" >> ~/.bashrc
 ```
 ## Running the Simulation
-Before running the launch file, you will need to make all the python file as excecutable.
+Before running the launch file, you will need to make all the Python files executable.
 
-To do that navigate to the `scripts` folder of that pakage, and run the following command
+To do that navigate to the `scripts` folder of that package, and run the following command
 ```sh
 chmod +x *.py 
 ```
 ### Launching the Objective
-To run the simulation, launch the `roslaunch <package_name> obj<objective_no>.launch` and parameters if any.
+To run the simulation, run `roslaunch <package_name> obj<objective_no>.launch` and the parameters if any.
 
 Example:
 
