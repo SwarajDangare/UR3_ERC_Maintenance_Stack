@@ -1,6 +1,6 @@
 # UR3_ERC_Maintenance_Stack
 
-This repository the Maintenance Stack for the ERC Remote competition. 
+This repository contains the Maintenance Stack for the ERC Remote competition. 
 
 ## Table of Contents
 1. [Requirements](#Requirements)
