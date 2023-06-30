@@ -7,6 +7,8 @@ This repository contains the Maintenance Stack for the ERC Remote competition.
     1. [Download UR3 simulation](#Download-UR3-simulation)
     1. [Run simulation](#Run-simulation)
 1. [Building](#building)
+1. [Running the Simulation](#Running-the-Simulation)
+    1. [Launching the Objective](#Launching-the-Objective)
 
 ## Requirements
 
@@ -69,4 +71,56 @@ If you don’t want to have to source the setup file every time you open a new s
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 echo "source ~/UR3_ERC_Maintenance_Stack/devel/setup.bash" >> ~/.bashrc
+```
+## Running the Simulation
+Before running the launch file, you will need to make all the python file as excecutable.
+
+To do that navigate to the `scripts` folder of that pakage, and run the following command
+```sh
+chmod +x *.py 
+```
+### Launching the Objective
+To run the simulation, launch the `roslaunch <package_name> obj<objective_no>.launch` and parameters if any.
+
+Example:
+
+- objective 1
+```sh
+roslaunch marsrovermanipal_c obj1.launch
+```
+- objective 2
+```sh
+roslaunch marsrovermanipal_c obj2.launch tags:="1, 2, 3, 4"
+```
+- objective 3
+```sh
+roslaunch marsrovermanipal_c obj3.launch
+```
+- objective 4
+```sh
+roslaunch marsrovermanipal_c obj4.launch angle:=45
+```
+- objective 5
+```sh
+roslaunch marsrovermanipal_c obj5.launch
+```
+- objective 6
+```sh
+roslaunch marsrovermanipal_c obj6.launch
+```
+- objective 7
+```sh
+roslaunch marsrovermanipal_c obj7.launch
+```
+- objective 8
+```sh
+roslaunch marsrovermanipal_c obj8.launch
+```
+- objective 9
+```sh
+roslaunch marsrovermanipal_c obj9.launch tag:=5
+```
+- objective 10
+```sh
+roslaunch marsrovermanipal_c obj10.launch
 ```
